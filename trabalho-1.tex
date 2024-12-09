@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{amssymb}
+\usepackage{graphicx} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\title{Lista Fundamentos Matemátocos da Computação II - Respostas}
+
+\begin{document}
+
+\maketitle
+
+\section{Seção Múltipla Escolha}
+
+\subsection{Questão M1} 
+Como $A = \{1, 3, 4\}$ [1] e $B = \{ x \in \mathbb{R} \ x^2 - 7x + 12 = 0\}$ [2], encontraremos os elementos de $B$ através da Relação de Girard de 2º, conhecida como Soma e Produto \\
+
+Note que $a = 1$, $b = - 7$, $c = 12$, $c/a = 12$ e $-b/a = 7$. Assim, por Soma e Produto,
+\[
+\begin{aligned}
+& x^2 - 7x + 12 = 0 \implies x \cdot x' = 12 \\
+&x^2 - 7x + 12 = 0 \implies x + x' = 7 \\  
+\end{aligned}
+\]
+
+Logo, os valores de $x$ e $x'$ seriam $3$ e $4$ [3]. Logo, $B = \{3, 4\}$ [4]. \\
+Considerando as alternativas dadas pelo enunciado e o que foi afirmado em [1] e [4], a alternativa correta é a letra C, que afirma que $B \subset A$, visto que o conjunto $\{3, 4\} \subset \{1, 3, 4\}$ ($B$ é um subconjunto de $A$).
+
+
+\subsection{Questão M2}
+Considerando as seguintes proposições, analisemos seus valores lógicos 
+\[
+\begin{aligned}
+& \text{1. } 0 \in \emptyset \\
+& \text{2. } \emptyset \in \{0\} \\
+& \text{3. } \{0\} \subset \emptyset\\
+& \text{4. } \emptyset \subset \{0\} \\
+& \text{5. } \{0\} \in \{0\} \\
+& \text{6. } \{0\} \subset \{0\} \\
+& \text{7. } \{\emptyset\} \subseteq \{\emptyset\}
+\end{aligned}
+\]
+
+\[
+\begin{aligned}
+& \text{1. } 0 \in \emptyset &&\text{F, por definição, o $\emptyset$ não possui elementos.} \\
+& \text{2. } \emptyset \in \{0\} &&\text{F, o $\emptyset$ é um subconjunto de todo conjunto, não elemento.}\\
+& \text{3. } \{0\} \subset \emptyset &&\text{F, por definição, o $\emptyset$ não possui subconjuntos além de $\emptyset$.} \\
+& \text{4. } \emptyset \subset \{0\} &&\text{V, por definição, o $\emptyset$ é um subconjunto de qualquer conjunto.} \\
+& \text{5. } \{0\} \in \{0\} &&\text{F, o \{0\} é um subconjunto de \{0\}, mas não um elemento.} \\
+& \text{6. } \{0\} \subset \{0\} &&\text{V, por definição, um dos subconjuntos de qualquer conjunto é ele mesmo.} \\
+& \text{7. } \{\emptyset\} \subseteq \{\emptyset\} &&\text{V, o conjunto com o conjunto vazio é um subconjunto dele mesmo.} \\
+\end{aligned}
+\]
+Logo, considerando as alternativas dadas pelo enunciado, a resposta é letra C, FFFVFVV.
+
+\subsection{Questão M3}
+% SUA RESPOSTA DA M3
+\subsection{Questão M4}
+% SUA RESPOSTA DA M4
+\subsection{Questão M5}
+% SUA RESPOSTA DA M5
+
+\vspace{0.5em}
+\hrule
+\vspace{0.5em}
+
+\section{Seção Discursiva}
+
+\subsection{Questão D1}
+% SUA RESPOSTA DA D1
+\subsection{Questão D2}
+% SUA RESPOSTA DA D2
+\subsection{Questão D3}
+% SUA RESPOSTA DA D3
+
+\end{document}
