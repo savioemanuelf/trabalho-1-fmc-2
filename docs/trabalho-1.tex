@@ -110,6 +110,39 @@ Essa união representa exatamente o mesmo que o conjunto $A$. Como os subconjunt
 \subsection{Questão D2}
 % SUA RESPOSTA DA D2
 \subsection{Questão D3}
-% SUA RESPOSTA DA D3
+\textbf{Passo base} \( n = 1 \):
+\[
+\bigcup_{i=1}^1 A_i = A_1 \quad \text{e} \quad \bigcap_{i=1}^1 \overline{A_i} = \overline{A_1} \implies \overline{\bigcup_{i=1}^1 A_i} = \bigcap_{i=1}^1 \overline{A_i}.
+\]
+\textbf{Passo indutivo:}  
+Seja \( n = k \) arbitrário:
+\[
+\overline{\bigcup_{i=1}^k A_i} = \bigcap_{i=1}^k \overline{A_i} \quad \text{[Hipótese de Indução]}.
+\]
+Queremos provar que a proposição é válida para \( n = k+1 \), ou seja:
+\[
+\overline{\bigcup_{i=1}^{k+1} A_i} = \bigcap_{i=1}^{k+1} \overline{A_i}. \quad \text{(I)}
+\]
+Pela definição de união, temos:
+\[
+\bigcup_{i=1}^{k+1} A_i = \bigcup_{i=1}^k A_i \cup A_{k+1}.
+\]
+Aplicando a propriedade do complemento da união, temos:
+\[
+\overline{\bigcup_{i=1}^{k+1} A_i} = \overline{\bigcup_{i=1}^k A_i \cup A_{k+1}} = \overline{\bigcup_{i=1}^k A_i} \cap \overline{A_{k+1}}. \quad \text{(II)}
+\]
+Substituindo \((II)\) em \((I)\), temos:
+\[
+\overline{\bigcup_{i=1}^{k+1} A_i} = \overline{\bigcup_{i=1}^k A_i} \cap \overline{A_{k+1}}.
+\]
+Pela hipótese de indução:
+\[
+\overline{\bigcup_{i=1}^k A_i} = \bigcap_{i=1}^k \overline{A_i}.
+\]
+Logo:
+\[
+\overline{\bigcup_{i=1}^{k+1} A_i} = \left( \bigcap_{i=1}^k \overline{A_i} \right) \cap \overline{A_{k+1}} = \bigcap_{i=1}^{k+1} \overline{A_i}.
+\]
+Portanto, a proposição é válida para \( n = k+1 \).
 
 \end{document}
